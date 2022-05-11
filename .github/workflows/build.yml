@@ -38,7 +38,7 @@ jobs:
                   cp index.html build/
                   
             - name: Git add
-              run: git add 00_Yash_Walia_Resume.pdf
+              run: git add resume.pdf
               
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.4
