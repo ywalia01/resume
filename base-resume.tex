@@ -1,0 +1,284 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Yash Walia} \\ \vspace{1pt}
+    % 123 Street Name, Town, State 12345 \\ 
+    \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (902) 989 5829 ~ 
+    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:yashbest005@gmail.com}{ yashbest005@gmail.com} ~ 
+    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/yash-walia/}{Linkedin} ~
+    \raisebox{-0.2\height}\faGithub\ \href{https://github.com/ywalia01}{Github} ~ \raisebox{-0.2\height}\faGlobe\ \href{https://ywalia01.netlify.app}{Portfolio}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Sept '23 -- Present}
+      {Master of Applied Computer Science}{Halifax, Nova Scotia, Canada}
+    \resumeSubheading
+      {Amity University Noida}{August '19 -- June '23}
+      {Bachelor of Technology in Computer Science}{Noida, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Javascript, Python, C/C++, SQL} \\
+     \vspace{1pt}
+     \textbf{Technologies}{: Reactjs, Node.js, React Native, Flask} \\
+     \vspace{1pt}
+     \textbf{Developer Tools}{: Git, XCode, AWS, Docker, Google Cloud Platform, VS Code} \\
+     \vspace{1pt}
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Tweepy, NLTK} \\
+    }}
+ \end{itemize}
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {{SSPL, DRDO}\href{https://read.getdailybrief.com/category/feed}{}}{March '22 -- May '22}
+      {Research Intern}{New Delhi, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{Research topic undertaken: Natural Language Processing in AI}
+        \resumeItem{Work involved assimilating to the applications of NLP in AI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {{Dailybrief}\href{https://read.getdailybrief.com/category/feed}{}}{July '21 -- September '21}
+      {Frontend Developer Intern}{Noida, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{Built reusable components in React using technologies such as Redux, Material UI}
+        \resumeItem{Worked on creating new screens and frontend components for the React Native application that serves approx 100,000+ users}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {{ITMTB - Prospareto}\href{https://customer.prospareto.com/explore}{}}{May '21 -- July '21}
+      {Frontend Developer Intern}{Noida, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{Built the Stock Lens, shared Bridge components and improved SEO using technologies such as Reactjs, Redux, Firebase, AWS}
+        \resumeItem{Improved the User Experience on blog.prospareto.com and rebuilt the new UI using Jekyll static site generator}
+      \resumeItemListEnd
+      
+    % \resumeSubheading
+    %   {{Google: 30 Days of Google Cloud}\href{https://drive.google.com/file/d/1kTUXe1TeRX8T524cO1Gcdk-Mg9zvA_Pj/view?usp=sharing}{}}{Sept '20 -- Nov '20}
+    %   {Google Cloud Platform Student}{}
+    %   \vspace{-7pt}
+    %   \resumeItemListStart
+    %     \resumeItem{Successfully completed both ML and Data Science Tracks}
+    %   \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+            {\textbf{iHeard} $|$ \emph{Scipy, Pytorch, Numpy, Flask, Reactjs}  $|$ \href{https://github.com/ywalia01/iheard}{Github}}{}
+            \resumeItemListStart
+                \resumeItem{An on-the-go web app for the hard of hearing/deaf}
+                \resumeItem{Uses Google Cloud API for speech-to-text conversion. Supports 4 languages}
+                \resumeItem{Detects the user input audio and classifies it into one of ten categories}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Crypto-Sentiments} $|$ \emph{Tweepy, Textblob, Flask, Reactjs} $|$ \href{https://github.com/ywalia01/crypto-sentiments}{Github}}{} 
+            \resumeItemListStart
+                \resumeItem{A web application that extracts live twitter data and displays the sentiment analysis to the user }
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{JChain} $|$ \emph{Java, Swing} $|$ \href{https://github.com/ywalia01/java-blockchain}{GitHub}}{} 
+            \resumeItemListStart
+                \resumeItem{A simple blockchain simulation with GUI implementation in Java}
+                \resumeItem{Used Java Swing Library to create GUI for the user}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Dune API} $|$ \emph{Nodejs, Expressjs, Reactjs} $|$ \href{https://github.com/ywalia01/dune-api}{GitHub}}{} 
+            \resumeItemListStart
+                \resumeItem{An API for the Dune franchise}
+                \resumeItem{Provides the user with book, character, movie and quotes JSON data}
+          \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+ 
+
+
+\section{Volunteering}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {{Internet Freedom Foundation}\href{https://internetfreedom.in/}{}}{Jan '22 -- Sept '22}
+      {Software Developer}{New Delhi, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{Was a part of the PlugtheBreach.in initiative}
+        \resumeItem{Contributed code for the development and maintenance of the official website}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+ 
+%-----------CERTIFICATIONS-----------
+\section{Certificates}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{{Google IT Support Professional Certificate} $|$ \href{https://coursera.org/share/559ef9eba15de57964e3a61a85c78fc7}{View}} \\
+     \textbf{{Google IT Automation with Python Professional Certificate} $|$ \href{http://coursera.org/verify/MR32ECWGGKRJ}{View}} \\
+     \textbf{{Udemy: The Advanced Web Developer Bootcamp} $|$ \href{https://www.udemy.com/certificate/UC-3f33b66f-c557-41b0-8b72-43a44fb10625/}{View}} \\
+     % \textbf{{Udemy: Learn Ethical Hacking From Scratch} $|$ \href{https://www.udemy.com/certificate/UC-e07721a4-5688-4f33-8eb5-48b1aada718d/}{View}} \\
+    }}
+ \end{itemize}
+
+
+
+% %-----------INVOLVEMENT---------------
+% \section{EXTRA-CURRICULAR}
+
+% \begin{itemize}[leftmargin=0.2in]
+
+%   \achievementItem{Member of Amity Linux Assistance Sapience Club(ALiAS)}
+
+% \end{itemize}
+
+\end{document}
