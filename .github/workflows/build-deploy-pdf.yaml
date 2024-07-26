@@ -6,7 +6,6 @@ on:
             - main
         paths:
             - ".github/workflows/**"
-            - CNAME
             - "**.html"
             - "**.tex"
     pull_request:
@@ -14,7 +13,6 @@ on:
             - main
         paths:
             - ".github/workflows/**"
-            - CNAME
             - "**.html"
             - "**.tex"
     workflow_dispatch: # Allows manual execution of workflow
@@ -39,7 +37,6 @@ jobs:
             - name: Post Processing
               run: |
                   mkdir build
-                  cp CNAME build/
                   cp *.html build/
                   cp base-resume.pdf build/
                   mv build/base-resume.pdf build/yash-walia-resume.pdf
