@@ -39,7 +39,6 @@ jobs:
             - name: Post Processing
               run: |
                   mkdir build
-                  cp -r static/ build/
                   cp CNAME build/
                   cp *.html build/
                   cp base-resume.pdf build/
